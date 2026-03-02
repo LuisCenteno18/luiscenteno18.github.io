@@ -286,18 +286,36 @@ ul {
 }
 
 .profile-container {
-    margin-bottom: 2rem;
-    display: flex;
-    justify-content: center;
+    width: 220px;
+    height: 220px;
+    margin: 0 auto 2rem;
+    border-radius: 50%;
+    padding: 6px;
+    background: var(--accent-gradient);
+    box-shadow: var(--accent-glow);
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
 }
 
 .profile-img {
-    width: 220px;
-    height: 220px;
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
     object-fit: cover;
     border: 4px solid var(--bg-card);
-    box-shadow: var(--accent-glow);
     transition: var(--transition-smooth);
     position: relative;
     z-index: 15;
@@ -812,4 +830,4 @@ footer {
     .about-stats {
         grid-template-columns: 1fr;
     }
-}
+   }
