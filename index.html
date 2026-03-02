@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luís Centeno | Geoscientist & Space Explorer</title>
+    <meta name="description"
+        content="Portfolio of Luís Centeno, Geoscientist and Space Studies student specializing in planetary surface processes, mission design, and AI-driven spatial data analysis.">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Background Canvas -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="logo">L.C.</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-content fade-in-up">
+                <div class="profile-container">
+                    <img src="Business_Headshot.jpeg" alt="Luís Centeno" class="profile-img">
+                </div>
+                <p class="greeting">Hello, I'm</p>
+                <h1 class="name">Luís Centeno<span class="dot">.</span></h1>
+                <h2 class="role">Geoscientist <span class="highlight">&</span> Space Explorer</h2>
+                <p class="tagline">Bridging geological expertise and AI to support planetary exploration and resource
+                    identification.</p>
+                <div class="hero-cta">
+                    <a href="#about" class="btn btn-primary">Explore Mission</a>
+                    <a href="https://linkedin.com/in/luis-centeno" target="_blank" class="btn btn-outline">Connect</a>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="section-container">
+                <h2 class="section-title">Mission <span class="highlight">Profile</span></h2>
+                <div class="about-grid grid-2">
+                    <div class="about-text glass-card fade-in">
+                        <p>I am a dedicated <strong>Geoscientist</strong> and Master of Space Studies candidate at the
+                            <strong>International Space University (ISU)</strong>. My specialization lies at the
+                            intersection of planetary surface/subsurface processes and robotic mission design.
+                        </p>
+                        <p>With a strong foundation in Geoscience Engineering, data science leadership, and technical
+                            project management, I have a proven track record of leading multidisciplinary teams. I
+                            specialize in analyzing complex geospatial data and developing AI-driven solutions for
+                            large-scale earth observation and subsurface exploration operations.</p>
+                        <p>My ultimate goal is to pioneer methodologies that combine geological intuition with
+                            cutting-edge artificial intelligence, paving the way for sustainable interplanetary
+                            exploration, in-situ resource utilization, and advancing our understanding of the cosmos.
+                        </p>
+                        <div class="contact-info">
+                            <a href="mailto:luiscenteno_18@hotmail.com" class="contact-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                    </path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                                luiscenteno_18@hotmail.com
+                            </a>
+                            <span class="location">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                Strasbourg, FR
+                            </span>
+                        </div>
+                    </div>
+                    <div class="about-stats glass-card fade-in delay-1">
+                        <div class="stat-item">
+                            <h3 class="stat-value">6+</h3>
+                            <p class="stat-label">Years of Experience</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-value">AI</h3>
+                            <p class="stat-label">Systems Leadership</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-value">3D</h3>
+                            <p class="stat-label">Subsurface Modeling</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 class="stat-value">1U</h3>
+                            <p class="stat-label">CubeSat Architecture</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section alt-bg">
+            <div class="section-container">
+                <h2 class="section-title">Professional <span class="highlight">Trajectory</span></h2>
+                <p class="section-subtitle">Industry: Geospatial, Data & Project Management, AI</p>
+                <div class="timeline">
+
+                    <div class="timeline-item fade-in-up">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card hover-glow">
+                            <div class="timeline-header">
+                                <h3>Data Geospatial & Space Specialist</h3>
+                                <span class="timeline-date">Jan 2024 — Present</span>
+                            </div>
+                            <ul class="task-list">
+                                <li>Conducting geospatial data analysis for diverse interplanetary surface modeling
+                                    projects at ISU.</li>
+                                <li>Integrating AI and Machine Learning methods for large-scale geospatial data analysis
+                                    to support Mars exploration and landing site characterization.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item fade-in-up delay-1">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card hover-glow">
+                            <div class="timeline-header">
+                                <h3>Technical Director & AI Systems Lead</h3>
+                                <h4>POLT, AI Information services | Lisbon, PT</h4>
+                                <span class="timeline-date">Nov 2022 — Mar 2025</span>
+                            </div>
+                            <ul class="task-list">
+                                <li>Led a multidisciplinary team to develop in-house Machine Learning software for
+                                    large-scale statistical data analysis, focusing on “maximum truth-seeking”
+                                    information.</li>
+                                <li>Managed complex technical workflows and ensured seamless interdisciplinary
+                                    communication.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item fade-in-up delay-2">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card hover-glow">
+                            <div class="timeline-header">
+                                <h3>Geologist & Project Coordinator (Geospatial Intelligence)</h3>
+                                <h4>Geoglobal | Lisbon, PT</h4>
+                                <span class="timeline-date">Apr 2019 — Sep 2022</span>
+                            </div>
+                            <ul class="task-list">
+                                <li>Led the €2.9M COSMO project, coordinating multidisciplinary teams to analyze
+                                    sedimentation and erosion patterns, combining aerial imagery with bathymetric data.
+                                </li>
+                                <li>Promoted to Head of Field Operations, translating complex geological interpretations
+                                    into actionable environmental policies.</li>
+                                <li>Managed integration of multi-source spatial data, ensuring stringent data integrity
+                                    for strategic planning.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item fade-in-up delay-3">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card hover-glow">
+                            <div class="timeline-header">
+                                <h3>Science Operations & Subsurface Exploration</h3>
+                                <h4>Ciência Viva & Pt. Speleology Society (SPE) | Lisbon, PT</h4>
+                                <span class="timeline-date">Aug 2013 — Sep 2016</span>
+                            </div>
+                            <ul class="task-list">
+                                <li>Conducted extensive subsurface sample collection in complex cave systems for
+                                    academic purposes. Lab Assistant in Geochemistry and Structural Geology.</li>
+                                <li>Performed geological mapping and surveys internationally, establishing adaptability
+                                    for field analog operations.</li>
+                                <li>Executed 3D structural modeling and Aerial GIS/HiRes imagery acquisition in diverse
+                                    terrains (Greece, Portugal, Spain).</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects & Achievements -->
+        <section id="projects" class="section">
+            <div class="section-container">
+                <h2 class="section-title">Missions & <span class="highlight">Research</span></h2>
+                <div class="projects-grid">
+
+                    <!-- Mars Mission -->
+                    <div class="project-card glass-card fade-in hover-glow">
+                        <div class="project-icon">🚀</div>
+                        <h3>Lead Scientist — M4 Mars Mission</h3>
+                        <p class="project-context">ISU Team Project</p>
+                        <p>Developed an operational rover prototype and mission design for seismic and lava-tube
+                            exploration. Conducted ML simulations to validate geochemical autonomous mapping and
+                            subsurface imaging capabilities.</p>
+                    </div>
+
+                    <!-- JMARS -->
+                    <div class="project-card glass-card fade-in delay-1 hover-glow">
+                        <div class="project-icon">🪐</div>
+                        <h3>JMARS Geospatial Analysis</h3>
+                        <p class="project-context">Mars Exploration</p>
+                        <p>Developed a comprehensive workflow to detect Martian water entrapments and volatile-rich
+                            sediments in crater deposits, directly applicable to the Oxia Planum site exploration
+                            objectives.</p>
+                    </div>
+
+                    <!-- Robotics -->
+                    <div class="project-card glass-card fade-in delay-2 hover-glow">
+                        <div class="project-icon">🤖</div>
+                        <h3>Robotic Mission Designs</h3>
+                        <p class="project-context">ISU Robot Competition</p>
+                        <p>Building an autonomous robotic system featuring obstacle-avoidance navigation and intelligent
+                            decision-making for sample collection, in collaboration with Dr. Yoshida (Tohoku
+                            University).</p>
+                    </div>
+
+                    <!-- Data Science -->
+                    <div class="project-card glass-card fade-in hover-glow">
+                        <div class="project-icon">🌌</div>
+                        <h3>Astronomical Data Mining</h3>
+                        <p class="project-context">Data Science for Space Applications</p>
+                        <p>Studied the evolution of the Cluster Cl Pismis 4 by producing a Color Magnitude Diagram and
+                            utilizing Gaia data release 3 (GDR3), Visier, and TopCat.</p>
+                    </div>
+
+                    <!-- Publication -->
+                    <div class="project-card glass-card fade-in delay-1 hover-glow featured">
+                        <div class="project-icon">📄</div>
+                        <h3><a href="https://www.mdpi.com/2076-3263/9/7/316" target="_blank"
+                                rel="noopener noreferrer">Geosciences Journal Publication</a></h3>
+                        <p class="project-context">Stavanger, NO — Jul 2019</p>
+                        <p>Published research on tectonic and sedimentary processes in confined deep-rift basins.
+                            Provided crucial new insights into tectono-sedimentary evolution, a foundational skill for
+                            identifying habitable resources on Mars.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section alt-bg">
+            <div class="section-container">
+                <h2 class="section-title">Academic <span class="highlight">Foundation</span></h2>
+                <div class="education-list grid-2">
+
+                    <div class="edu-card glass-card fade-in hover-glow">
+                        <div class="edu-year">2025 - 2026</div>
+                        <h3>Master of Space Studies</h3>
+                        <h4>International Space University, Strasbourg</h4>
+                        <p>Space Science & Exploration. Key projects in Space Data Science, 1U CubeSat Development, and
+                            Martian morphology web visualizations.</p>
+                    </div>
+
+                    <div class="edu-card glass-card fade-in delay-1 hover-glow">
+                        <div class="edu-year">2023 - 2024</div>
+                        <h3>Complementary Education in Data & Geology</h3>
+                        <h4>IE Business School & INGEOEXPERT</h4>
+                        <p>Comprehensive Data Science module. Advanced Seismic Interpretation (2D/3D),
+                            Thermo-chronology, and Tectonic Modeling using PETREL and MOVE.</p>
+                    </div>
+
+                    <div class="edu-card glass-card fade-in hover-glow">
+                        <div class="edu-year">2021 - 2023</div>
+                        <h3>Grad Cert Planetary Sciences</h3>
+                        <h4>Birkbeck University, London</h4>
+                        <p>Specialization in Astrobiology, Planetary Spectroscopy, Geology of the Solar System, and
+                            Astronomy.</p>
+                    </div>
+
+                    <div class="edu-card glass-card fade-in delay-1 hover-glow">
+                        <div class="edu-year">2016 - 2018</div>
+                        <h3>MSc Geosciences Engineering</h3>
+                        <h4>University of Stavanger, Norway</h4>
+                        <p>Specialized in Subsurface Modeling. Key studies in Advanced Seismic 2D/3D modeling, Earth
+                            Observation, Geophysics, and Structural Geology.</p>
+                    </div>
+
+                    <div class="edu-card glass-card fade-in hover-glow" style="grid-column: 1 / -1;">
+                        <div class="edu-year">2010 - 2016</div>
+                        <h3>BSc Geology & Post-Grad Subsurface Geosciences</h3>
+                        <h4>Faculty of Science, University of Lisbon</h4>
+                        <p>Earth Observation (GIS), Reservoir modeling, Tectonophysics, Advanced Fieldwork.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="section-container">
+                <h2 class="section-title">Technical <span class="highlight">Arsenal</span></h2>
+                <div class="skills-container grid-3">
+
+                    <div class="skill-category glass-card fade-in">
+                        <h3>Geospatial & Remote Sensing</h3>
+                        <ul class="skill-tags">
+                            <li>ArcGIS / QGIS</li>
+                            <li>JMARS</li>
+                            <li>Google Earth Engine</li>
+                            <li>Sentinel & Landsat</li>
+                            <li>DTM</li>
+                            <li>High-Res Image Classification</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category glass-card fade-in delay-1">
+                        <h3>Subsurface & Sample Science</h3>
+                        <ul class="skill-tags">
+                            <li>2D/3D Seismic Interpretation</li>
+                            <li>PETREL</li>
+                            <li>MOVE</li>
+                            <li>Tectonic Modeling</li>
+                            <li>Astrobiology</li>
+                            <li>Spectroscopy</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category glass-card fade-in delay-2">
+                        <h3>Space System Engineering</h3>
+                        <ul class="skill-tags">
+                            <li>STK</li>
+                            <li>Mission Geometry Analysis</li>
+                            <li>ECSS Standards</li>
+                            <li>CubeSat Architecture</li>
+                            <li>Requirements Mgmt</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category glass-card fade-in">
+                        <h3>Data Science & IT Tools</h3>
+                        <ul class="skill-tags">
+                            <li>Python</li>
+                            <li>MATLAB</li>
+                            <li>Machine Learning</li>
+                            <li>Statistical Analysis</li>
+                            <li>AutoCAD</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category glass-card fade-in delay-1">
+                        <h3>Interpersonal Skills</h3>
+                        <ul class="skill-tags">
+                            <li>Leadership & Followership</li>
+                            <li>Conflict Resolution</li>
+                            <li>Intercultural Adaptability</li>
+                            <li>Team-centric Problem Solving</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category glass-card fade-in delay-2">
+                        <h3>Languages</h3>
+                        <ul class="skill-tags">
+                            <li>Portuguese (Native)</li>
+                            <li>English (Fluent)</li>
+                            <li>Spanish (B1)</li>
+                            <li>French (A1)</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <h2>Luís Centeno</h2>
+                <p>Geoscientist & Space Explorer</p>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/luis-centeno" target="_blank" aria-label="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                            </path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+                    <a href="mailto:luiscenteno_18@hotmail.com" aria-label="Email">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Luís Centeno. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
